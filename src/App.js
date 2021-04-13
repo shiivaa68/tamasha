@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {FormattedMessage} from 'react-intl'
+import Header from './component/main/Header'
+import Footer from './component/main/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <header className="App-header">
+  <Header/>
+
+  </header>
+  <main>
+    content
+  </main>
+  <footer className="App-header">
+    <Footer/>
+  </footer>
+  
     </div>
   );
 }

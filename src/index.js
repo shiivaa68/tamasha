@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import Provider from  './component/Provider'
+import {AppContextProvider} from  './context'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppContextProvider>
+    <Provider>
+     <App />
+    </Provider>
+    </AppContextProvider>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
